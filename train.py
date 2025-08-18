@@ -29,7 +29,7 @@ class Config:
 
     def __post_init__(self):
         if self.timesteps is None:
-            self.timesteps = [4_000_000]
+            self.timesteps = [1_000_000, 2_000_000, 4_000_000]
 
 
 class RewardTracker(BaseCallback):
