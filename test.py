@@ -13,7 +13,7 @@ from aquacrop.utils import prepare_weather
 from aquacropgymnasium.environment import Wheat
 
 TRAIN_DIR = '/Users/jintpongchababnapa/Documents/Dissertation/code_to_test_modifield/train_output'
-EVAL_DIR = './eval_output-1'
+EVAL_DIR = './test_output'
 WEATHER_PATH = '/Users/jintpongchababnapa/Documents/Dissertation/code_to_test_modifield/weather_data/champion_climate.txt'
 os.makedirs(EVAL_DIR, exist_ok=True)
 
