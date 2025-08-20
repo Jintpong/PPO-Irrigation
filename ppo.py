@@ -31,12 +31,9 @@ class IrrigationPPO(PPO):
         self.last_loss = np.nan
 
     def _clip_schedule(self, base_value):
-        def adaptive_clip(progress):
-            if progress < 0.5:
-                return base_value * (1 + 0.5 * (1 - progress))
-            else:
-                return base_value * (0.7 + 0.3 * progress)
-        return adaptive_clip
+        def clip(progress):
+            return base_value
+        return clip
 
     def _setup_model(self):
         super()._setup_model()
