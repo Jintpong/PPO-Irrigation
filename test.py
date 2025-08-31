@@ -14,7 +14,7 @@ from pathlib import Path
 from aquacropgymnasium.environment import Wheat
 
 TRAIN_DIR = Path("train_output")
-EVAL_DIR = './test_2_output'
+EVAL_DIR = './test_output'
 WEATHER_PATH = Path("weather_data/champion_climate.txt")
 os.makedirs(EVAL_DIR, exist_ok=True)
 
